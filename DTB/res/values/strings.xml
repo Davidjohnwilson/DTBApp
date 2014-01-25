@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DTB</string>
+    <string name="action_settings">Settings</string>
+    <string name="dtbwelcome">Hello and welcome to the DaveTriesBallet app!\n\nYou should find all you need to know to start taking ballet classes (at whatever age!). </string>
+	<string name="dtbsitebutton">Visit DaveTriesBallet.com</string>
+	<string name="emaildtbbutton">Email DaveTriesBallet</string>
+	<string name="dtblogo">DaveTriesBallet Logo</string>
+</resources>
