@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
-	Button dtbBlogButton, dtbEmailButton;
+	Button dtbBlogButton, dtbEmailButton; 
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
