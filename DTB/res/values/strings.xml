@@ -3,8 +3,9 @@
 
     <string name="app_name">DTB</string>
     <string name="action_settings">Settings</string>
-    <string name="dtbwelcome">Hello and welcome to the DaveTriesBallet app!\n\nYou should find all you need to know to start taking ballet classes (at whatever age!).\nClick the buttons below to reach the DaveTriesBallet site or to send an email with any questions.</string>
-	<string name="dtbsitebutton">Visit DaveTriesBallet.com</string>
+    <string name="dtbwelcome">Hello and welcome to the DaveTriesBallet app!\n\nClick the buttons below to reach the DaveTriesBallet site or to send an email with any questions.</string>
+    <string name="dtbintroduction">In this app you\'ll find everything you need to watch or start ballet.\n\nIn the \"Watching Ballet\" section you\'ll find guides on buying tickets, what to wear, and what to see when going to the ballet. Check out mini-guides on a whole host of ballets giving you synopses, famous parts to watch out for, and playlists of the music. Plus, check out the \"Ballet Selector\" to see what you might want to watch next!\n\nIn the \"Starting Ballet\" section you\'ll find all you need to start taking ballet ages, no matter what age. There are guides on what to wear, where to find a school, and what to expect from your first class. Plus, check out the \"Ballet Dictionary\" to find definitions of common terms.\n\nEnjoy!</string>
+  	<string name="dtbsitebutton">Visit DaveTriesBallet.com</string>
 	<string name="emaildtbbutton">Email DaveTriesBallet</string>
 	<string name="dtblogo">DaveTriesBallet Logo</string>
 </resources>
