@@ -41,12 +41,27 @@
         android:layout_centerHorizontal="true"
         android:layout_centerInParent="true"
         android:text="@string/emaildtbbutton"/>
-    
+    <ScrollView
+        android:layout_below="@+id/btn_sendEmailToDTB"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        >
+    <RelativeLayout
+	  android:layout_width="fill_parent"
+ 	  android:layout_height="wrap_content">
 	<TextView
-	    android:layout_below="@+id/btn_sendEmailToDTB"
         android:id="@+id/introductiontext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/dtbintroduction" />
-
+	<ImageView
+        android:id="@+id/img_dtbSignature"
+        android:layout_below="@+id/introductiontext"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/dtb_signature"
+        android:contentDescription="@string/dtblogo"/>
+	   </RelativeLayout> 
+</ScrollView>
 </RelativeLayout>
