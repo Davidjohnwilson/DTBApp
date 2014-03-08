@@ -23,6 +23,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="MainStartingBallet"
+            	  android:label="Starting Ballet">
+            <intent-filter>
+                <action android:name="com.davetriesballet.MAINSTARTINGBALLET" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

@@ -8,4 +8,7 @@
   	<string name="dtbsitebutton">Visit DaveTriesBallet.com</string>
 	<string name="emaildtbbutton">Email DaveTriesBallet</string>
 	<string name="dtblogo">DaveTriesBallet Logo</string>
+	<string name="startingballettitle">Starting Ballet</string>
+	<string name="watchingballettitle">Watching Ballet</string>
+	<string name="home">Home</string>
 </resources>

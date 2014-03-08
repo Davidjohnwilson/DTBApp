@@ -1,8 +1,26 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
+       <item
+        android:id="@+id/menu_home"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/home"/>
+    
+    <item
+        android:id="@+id/menu_startingballet"
+        android:orderInCategory="200"
+        android:showAsAction="ifRoom"
+        android:title="@string/startingballettitle"/>
+
+    <item
+        android:id="@+id/menu_watchingballet"
+        android:orderInCategory="300"
+        android:showAsAction="ifRoom"
+        android:title="@string/watchingballettitle"/>
+    
     <item
         android:id="@+id/action_settings"
-        android:orderInCategory="100"
+        android:orderInCategory="400"
         android:showAsAction="never"
         android:title="@string/action_settings"/>
 
