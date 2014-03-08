@@ -19,14 +19,17 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <intent-filter>
+                <action android:name="com.davetriesballet.DTB.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>            
         </activity>
-        <activity android:name="MainStartingBallet"
+        <activity android:name="com.davetriesballet.DTB.MainStartingBallet"
             	  android:label="Starting Ballet">
             <intent-filter>
-                <action android:name="com.davetriesballet.MAINSTARTINGBALLET" />
+                <action android:name="com.davetriesballet.DTB.MAINSTARTINGBALLET" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
