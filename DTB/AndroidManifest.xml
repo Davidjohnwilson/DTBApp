@@ -33,6 +33,12 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-    </application>
+        <activity android:name="com.davetriesballet.DTB.MainWatchingBallet"
+            	  android:label="Watching Ballet">
+            <intent-filter>
+                <action android:name="com.davetriesballet.DTB.MAINWATCHINGBALLET" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>    </application>
 
 </manifest>

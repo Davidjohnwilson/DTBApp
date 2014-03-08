@@ -70,6 +70,7 @@ public class MainActivity extends Activity {
 	        	startActivity(new Intent("com.davetriesballet.DTB.MAINSTARTINGBALLET"));
 	            return true;
 	        case R.id.menu_watchingballet:
+	        	startActivity(new Intent("com.davetriesballet.DTB.MAINWATCHINGBALLET"));
 	        	return true;
 	        default:
 	            return super.onOptionsItemSelected(item);

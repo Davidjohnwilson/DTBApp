@@ -6,11 +6,11 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainStartingBallet  extends Activity {
+public class MainWatchingBallet  extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.mainstartingballet);
+		setContentView(R.layout.mainwatchingballet);
 	}
 	
 	@Override
@@ -29,9 +29,9 @@ public class MainStartingBallet  extends Activity {
 	        	startActivity(new Intent("com.davetriesballet.DTB.MAIN"));
 	            return true;
 	        case R.id.menu_startingballet:
+	        	startActivity(new Intent("com.davetriesballet.DTB.MAINSTARTINGBALLET"));
 	            return true;
 	        case R.id.menu_watchingballet:
-	        	startActivity(new Intent("com.davetriesballet.DTB.MAINWATCHINGBALLET"));
 	        	return true;
 	        default:
 	            return super.onOptionsItemSelected(item);
