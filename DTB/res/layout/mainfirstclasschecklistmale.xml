@@ -15,7 +15,7 @@
         android:id="@+id/findSelected"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Find items you&apos;ve packed" >
+        android:text="Find items you\'ve packed" >
     </Button>
 
     <ListView

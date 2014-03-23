@@ -43,6 +43,8 @@ public class MainFirstClassChecklistMale extends Activity {
 		DanceItem item = new DanceItem("Dance Belt", "A men's Dance Belt",
 				false);
 		itemList.add(item);
+		item = new DanceItem("Shoes", "A pair of ballet shoes", false);
+		itemList.add(item);
 		item = new DanceItem("Tights", "A pair of black tights", false);
 		itemList.add(item);
 		item = new DanceItem("T-Shirt", "A white t-shirt", false);
@@ -62,7 +64,7 @@ public class MainFirstClassChecklistMale extends Activity {
 				// When Clicked, show a toast with the TextView text
 				DanceItem item = (DanceItem) parent.getItemAtPosition(position);
 				Toast.makeText(getApplicationContext(),
-						"You've just packed your " + item.getName(),
+						"Do you want to pack your " + item.getCode()+"?",
 						Toast.LENGTH_LONG).show();
 			}
 		});
@@ -107,8 +109,7 @@ public class MainFirstClassChecklistMale extends Activity {
 						DanceItem item = (DanceItem) cb.getTag();
 						Toast.makeText(
 								getApplicationContext(),
-								"You just toggled " + cb.getText() + "to be"
-										+ cb.isChecked() + ".",
+								"You just selected " + item.getCode() + ".",
 								Toast.LENGTH_LONG).show();
 						item.setSelected(cb.isChecked());
 					}
@@ -118,7 +119,7 @@ public class MainFirstClassChecklistMale extends Activity {
 			}
 
 			DanceItem item = itemList.get(position);
-			holder.code.setText(item.getCode());
+			//holder.code.setText(item.getCode());
 			holder.name.setText(item.getName());
 			holder.name.setChecked(item.isSelected());
 			holder.name.setTag(item);
