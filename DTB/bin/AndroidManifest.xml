@@ -55,6 +55,15 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-    </application>
+       <activity
+            android:name="com.davetriesballet.DTB.MainFirstClassChecklistFemale"
+            android:label="Checklist (Female)" >
+            <intent-filter>
+                <action android:name="com.davetriesballet.DTB.MAINCHECKLISTFEMALE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        </application>
 
 </manifest>

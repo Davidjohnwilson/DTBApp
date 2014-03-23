@@ -21,14 +21,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
 
-public class MainFirstClassChecklistMale extends Activity {
+public class MainFirstClassChecklistFemale extends Activity {
 
 	MyCustomAdapter dataAdapter = null;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.mainfirstclasschecklistmale);
+		setContentView(R.layout.mainfirstclasschecklistfemale);
 
 		// Generate list view from ArrayList
 		displayListView();
@@ -40,14 +40,13 @@ public class MainFirstClassChecklistMale extends Activity {
 
 		// Array list of items
 		ArrayList<DanceItem> itemList = new ArrayList<DanceItem>();
-		DanceItem item = new DanceItem("Dance Belt", "A men's Dance Belt",
-				false);
+		DanceItem item = new DanceItem("Leotard", "A woman's Leotard", false);
 		itemList.add(item);
 		item = new DanceItem("Shoes", "A pair of ballet shoes", false);
 		itemList.add(item);
-		item = new DanceItem("Tights", "A pair of black tights", false);
+		item = new DanceItem("Tights", "A pair of pink tights", false);
 		itemList.add(item);
-		item = new DanceItem("T-Shirt", "A white t-shirt", false);
+		item = new DanceItem("Skirt", "A ballet skirt", false);
 		itemList.add(item);
 		item = new DanceItem("Dance Journal", "A dance journal and pen", false);
 		itemList.add(item);
@@ -64,7 +63,7 @@ public class MainFirstClassChecklistMale extends Activity {
 				// When Clicked, show a toast with the TextView text
 				DanceItem item = (DanceItem) parent.getItemAtPosition(position);
 				Toast.makeText(getApplicationContext(),
-						"Do you want to pack your " + item.getCode()+"?",
+						"Do you want to pack your " + item.getCode() + "?",
 						Toast.LENGTH_LONG).show();
 			}
 		});
@@ -107,8 +106,7 @@ public class MainFirstClassChecklistMale extends Activity {
 					public void onClick(View v) {
 						CheckBox cb = (CheckBox) v;
 						DanceItem item = (DanceItem) cb.getTag();
-						Toast.makeText(
-								getApplicationContext(),
+						Toast.makeText(getApplicationContext(),
 								"You just selected " + item.getCode() + ".",
 								Toast.LENGTH_LONG).show();
 						item.setSelected(cb.isChecked());
@@ -119,7 +117,7 @@ public class MainFirstClassChecklistMale extends Activity {
 			}
 
 			DanceItem item = itemList.get(position);
-			//holder.code.setText(item.getCode());
+			// holder.code.setText(item.getCode());
 			holder.name.setText(item.getName());
 			holder.name.setChecked(item.isSelected());
 			holder.name.setTag(item);
@@ -129,12 +127,12 @@ public class MainFirstClassChecklistMale extends Activity {
 		}
 
 	}
-	
+
 	private void checkButtonClick() {
-		
+
 		Button myButton = (Button) findViewById(R.id.findSelected);
 		myButton.setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				StringBuffer responseText = new StringBuffer();
@@ -155,8 +153,8 @@ public class MainFirstClassChecklistMale extends Activity {
 						responseText.append("\n" + item.getCode());
 					}
 				}
-				//TODO What if nothing/all selected
-				Toast.makeText(getApplicationContext(), responseText, 
+
+				Toast.makeText(getApplicationContext(), responseText,
 						Toast.LENGTH_LONG).show();
 			}
 		});
