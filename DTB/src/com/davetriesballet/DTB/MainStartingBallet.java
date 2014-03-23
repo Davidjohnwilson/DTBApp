@@ -2,17 +2,35 @@ package com.davetriesballet.DTB;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
 public class MainStartingBallet  extends Activity {
+	
+	Button maleChecklistButton, femaleChecklistButton; 
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.mainstartingballet);
-	}
 	
+	
+	
+	//---Set Male Checklist button---
+	maleChecklistButton = (Button) findViewById(R.id.btn_checklistmale);
+	maleChecklistButton.setOnClickListener(new OnClickListener() {	
+		public void onClick(View v) {
+        	startActivity(new Intent("com.davetriesballet.DTB.MAINCHECKLISTMALE"));
+		}
+	});
+	
+	
+	}
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.

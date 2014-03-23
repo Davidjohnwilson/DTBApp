@@ -16,4 +16,6 @@
 	    &#8226; A checklist of what you need to take to your first class;\n
 		&#8226; A ballet school class to find your nearby classes;\n
 		&#8226; And more!</string>
+	<string name="btnmalechecklist">Checklist (Male)</string>
+	<string name="btnfemalechecklist">Checklist (Female)</string>
 </resources>
