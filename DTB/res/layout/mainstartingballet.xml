@@ -9,8 +9,16 @@
     tools:context=".MainActivity" >
 
     <TextView
+        android:id="@+id/startingballetwelcometext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Starting Ballet Page" />
+        android:text="@string/startingballethomepage" />
 
+    <TextView
+        android:id="@+id/startingballetwelcomelist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startingballetwelcometext"
+        android:text="@string/startingballethomepagelist" />
+    
 </RelativeLayout>

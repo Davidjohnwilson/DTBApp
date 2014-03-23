@@ -8,60 +8,65 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
+    <ImageView
+        android:id="@+id/img_firstImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/dtblogo"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher" />
+
     <TextView
         android:id="@+id/welcometext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/img_firstImage"
         android:text="@string/dtbwelcome" />
-    
-    <ImageView 
-        android:id="@+id/img_firstImage"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:scaleType="fitXY"
-        android:layout_centerInParent="true"
-        android:src="@drawable/ic_launcher"
-        android:layout_below="@+id/welcometext"
-        android:contentDescription="@string/dtblogo"/>
 
     <Button
         android:id="@+id/btn_blogpage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/img_firstImage"
-        android:layout_centerHorizontal="true"
-        android:layout_centerInParent="true"
-        android:text="@string/dtbsitebutton" />
-    
-    <Button 
+        android:layout_below="@+id/welcometext"
+        android:layout_alignLeft="@+id/welcometext"
+        android:text="@string/dtbsitebutton"
+        android:textSize="12sp" />
+
+    <Button
         android:id="@+id/btn_sendEmailToDTB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_blogpage"
-        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/btn_blogpage"
+        android:layout_below="@+id/welcometext"
         android:layout_centerInParent="true"
-        android:text="@string/emaildtbbutton"/>
+        android:text="@string/emaildtbbutton"
+        android:textSize="12sp" />
+
     <ScrollView
-        android:layout_below="@+id/btn_sendEmailToDTB"
-        android:layout_height="fill_parent"
         android:layout_width="fill_parent"
-        >
-    <RelativeLayout
-	  android:layout_width="fill_parent"
- 	  android:layout_height="wrap_content">
-	<TextView
-        android:id="@+id/introductiontext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/dtbintroduction" />
-	<ImageView
-        android:id="@+id/img_dtbSignature"
-        android:layout_below="@+id/introductiontext"
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:scaleType="centerInside"
-        android:src="@drawable/dtb_signature"
-        android:contentDescription="@string/dtblogo"/>
-	   </RelativeLayout> 
-</ScrollView>
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/btn_blogpage" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/introductiontext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dtbintroduction" />
+
+            <ImageView
+                android:id="@+id/img_dtbSignature"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/introductiontext"
+                android:contentDescription="@string/dtblogo"
+                android:scaleType="centerInside"
+                android:src="@drawable/dtb_signature" />
+        </RelativeLayout>
+    </ScrollView>
+
 </RelativeLayout>
