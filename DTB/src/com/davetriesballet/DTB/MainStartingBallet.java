@@ -36,6 +36,17 @@ public class MainStartingBallet extends Activity {
 						"com.davetriesballet.DTB.MAINCHECKLISTFEMALE"));
 			}
 		});
+		
+		String testText = "Recently I\'ve been getting lots of emails from people" + 
+				" wanting to start (or come back to) ballet, often in their twenties." + 
+				" I\'ve been more than happy to reply to people and help them " + 
+				"prepare for their first class, and it has made me think about what" + 
+				" advice I would give myself, if I could go back 3 and a half years " + 
+				"to when I first started ballet.";
+		
+		//---Set expandable text view ---
+		ExpandableTextView expandableTextView = (ExpandableTextView) findViewById(R.id.testexpandabletext);
+		expandableTextView.setText(testText);
 
 	}
 

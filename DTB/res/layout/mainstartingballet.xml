@@ -37,4 +37,10 @@
         android:layout_centerHorizontal="true"
         android:text="@string/btnfemalechecklist" />
 
+    <com.davetriesballet.DTB.ExpandableTextView
+        android:id="@+id/testexpandabletext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_checklistfemale" />
+
 </RelativeLayout>
